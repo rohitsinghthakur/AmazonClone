@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="0; url=http://example.com"> -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADsUlEQVRYhbWWT2gcVRzHP8/sBsSkpkLUpdlQRAgptexuqrR6EcxqDipWacCLB4PJwUNpwEUwiAgt4sE/NHdLwIM1NFvw4CUU04JJs7HSRDYbD1VCNiRBiTtJDmnh62F3pjOZyc40ab/wmHlvfu/9vu/7+/3eG6hBUpOkjyXN6+HhlqRBSY/ihqQOSX8+RMdBRNoBjKQm4CbwLBFhWRYLCwtO3xhDIpEgkUhEXQJgFjiOpE+j0h7L59WdzSoWjzutwfXenc1qLJ+/HyXOoAjSVyoVdWezHmf1Wi6Xi0qgQBSr07293l3HYqFkIiqxFUogn88HOkhlMjrd2+sLid1eyWajEFAogQ/6+0MlzuVygSSi4JGwVDXG+MaGhoY8/b6+PgROux8YSaFz3GVnjCGTyfhs4o2Nnr6Au9vboQRiUVg2NzfT1dXl9JeXlymXy/w6OQnAxMRE1akUqNi+CdhOv7t4kR9HR5mbnfV8E2AIDlcooiTKWD6vtmQyMNHqlWMUhObAzMwMJ06edHZpPwEGz54l2d7Okc5OXuvp8akSJQdCFUil076ddWezWlpa8tjtVYG6BEqlUuDChULBY1cul30haXgQ50Bxft6R0y2tuyIAisWi825cz+Xl5dAI1CWwuLjoWdR+tyzLY/fDpUuB829MT4cSqBuC8fFx5/LZ7SgeGRnx2dhhSGcyqlQqdUNQl4A7tjtLL5VOqy2Z3LUM7fELw8N7JyD5r+LdWiqT8Y21JZMqlUr7I2D/jPh2WJO8oRYSy7KcW9FWKMx5JAI2iQvDww6RhlhMqUxG/QMDvpI8d/68+gcGZFmu2G8sSavT0soNadubE96T8I9v4bEkHH47PHujYKsMUx/Cav5eLR/7Bo6ccUy8ZXioB37rh6unYK2wfwKNB+DoJ/D6ErxTgaZO3w+Dl0BLB7xxG7b/hfHnq0T+ugx3NvZGYHUK5s7BT4dgswwbRWh90WNiJN0FGjyjdyy4+Rnc/gpUu4CS70PLMXjypSrReDO+OeslWJ+D1WuwcgW2/6meXCcuQ/wAzH0Or/7invWfkXQLeC5wB2sFmHwPNov3jsOdd6dxje38HXjqLUh/AY93wNp0lURLh9viupH0EfBlIAEbf4/B/Newfo2ge1ly+TbAM4Nw+F1oPV53WWDASGoEpoBUmDVbZVibgs1FWLlac2ggfrAanoNHofUFf3iCcR14ubYDPS3pSpQz4QHhe0lP2II5kHQKeBPoYre82Dt+B2aAUWPMz/bg/5AZ2OKL1i4FAAAAAElFTkSuQmCC"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Amazon by Rohit</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="logo">
+          <img
+            src="https://amazon-blogs-brightspot-lower.s3.amazonaws.com/about/00/92/0260aab44ee8a2faeafde18ee1da/amazon-logo-inverse.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="address">
+          <i class="ri-map-pin-line" id="loc-icon"></i>
+          <div class="address-text">
+            <p>Hello</p>
+            <h4>Select your address</h4>
+          </div>
+        </div>
+
+        <div class="center-botton">
+          <select name="cars" id="All">
+            <option value="Volvo">All</option>
+            <option value="saab">Alexa Skills</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            <option value="saab">Alexa Skills</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            <option value="saab">Alexa Skills</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            <option value="saab">Alexa Skills</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+          <input type="text" placeholder="Search Amazon.in" id="Search-box" />
+          <button id="Search-icon"><i class="ri-search-2-line"></i></button>
+        </div>
+
+        <div class="language">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/555/555462.png"
+            alt=""
+            width="20px"
+            id="indian-flag"
+          />
+          <div id="EN">
+            <h3>EN</h3>
+          </div>
+        </div>
+
+        <div class="account-list">
+          <p>Hello,sign in</p>
+          <h4>Account & Lists</h4>
+        </div>
+
+        <div class="return-orders">
+          <p>Returns</p>
+          <h4>& Orders</h4>
+        </div>
+
+        <div class="cart">
+          <i class="ri-shopping-cart-fill" id="cart-icon"></i>
+          <h5>Cart</h5>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="page1" id="top">
+          <div class="nav">
+            <div class="left-element">
+              <div class="All">
+                <i class="ri-menu-fill"></i>
+                <h4>All</h4>
+              </div>
+              <div>
+                <p>Amazon miniTV</p>
+              </div>
+              <div>
+                <p>Sell</p>
+              </div>
+              <div>
+                <p>Best Sellers</p>
+              </div>
+              <div>
+                <p>Mobiles</p>
+              </div>
+              <div>
+                <p>Today's Deals</p>
+              </div>
+              <div>
+                <p>Customer Service</p>
+              </div>
+              <div>
+                <p>New Releases</p>
+              </div>
+            </div>
+
+            <div class="right-element">
+              <img
+                src="https://m.media-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/SWM_400x39_Starts._CB577185520_.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="banners">
+            <div class="offer-banner">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Teaser1_2/J23_T2_PC_Unrec_Header_V2.jpg"
+                alt=""
+                width="100%"
+              />
+            </div>
+
+            <div class="caseback-banner">
+              <img
+                src="https://m.media-amazon.com/images/G/31/Events/img23/Jupiter23/Teaser1_2/J23_PC_Unrec_FCO_NTA._CB578611670_.jpg"
+                alt=""
+                width="100%"
+              />
+            </div>
+
+            <div class="voucher-banners">
+              <div class="one">
+                <img
+                  src="https://m.media-amazon.com/images/G/31/Events/img23/Jupiter23/Teaser1_2/J23_Unrec_FCOTile1_V3.2._CB578585880_.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="one">
+                <img
+                  src="https://m.media-amazon.com/images/G/31/Events/img23/Jupiter23/Teaser1_2/J23_Unrec_FCOTile1_V3.2._CB578585880_.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="one">
+                <img
+                  src="https://m.media-amazon.com/images/G/31/Events/img23/Jupiter23/Teaser1_2/J23_Unrec_FCOTile1_V3.2._CB578585880_.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="one">
+                <img
+                  src="https://m.media-amazon.com/images/G/31/Events/img23/Jupiter23/Teaser1_2/J23_Unrec_FCOTile1_V3.2._CB578585880_.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="one">
+                <img
+                  src="https://m.media-amazon.com/images/G/31/Events/img23/Jupiter23/Teaser1_2/J23_Unrec_FCOTile1_V3.2._CB578585880_.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="one">
+                <img
+                  src="https://m.media-amazon.com/images/G/31/Events/img23/Jupiter23/Teaser1_2/J23_Unrec_FCOTile1_V3.2._CB578585880_.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="free-trail-banner">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/ACQ/Jup23/prime-CTA_PC_2_ft_1.jpg"
+                alt=""
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="page2">
+          <div class="mobile-banner">
+            <img
+              src="https://m.media-amazon.com/images/G/31/Events/img23/Jupiter23/J23_PC_KSD_Herotater._SX3000_QL85_.jpg"
+              alt=""
+              width="100%"
+            />
+          </div>
+
+          <div class="har-ghar-stadium-banner">
+            <img
+              src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/J23_T2_CFO_PC_HeaderBanner.jpg"
+              alt=""
+              width="100%"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <a href="#top">
+          <div class="goto-top-bookmark">
+            <p>Back to top</p>
+          </div>
+        </a>
+
+        <div class="footer-section-2">
+          <div class="know-us">
+            <h3>Get to Know Us</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Carees</li>
+              <li>Press REleases</li>
+              <li>Amazon Science</li>
+            </ul>
+          </div>
+          <div class="know-us">
+            <h3>Connect with Us</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Carees</li>
+              <li>Press REleases</li>
+              <li>Amazon Science</li>
+            </ul>
+          </div>
+          <div class="know-us">
+            <h3>Make Money with Us</h3>
+            <ul>
+              <li>Sell on Amazon</li>
+              <li>Sell under Amazon Accelerator</li>
+           
+              <li>Protect and Build Your Brand</li>
+            
+              <li>Amazon Global Selling</li>
+          
+              <li>Become an Affiliate</li>
+            
+              <li>Fulfilment by Amazon</li>
+       
+              <li>Advertise Your Products</li>
+
+              <li>Amazon Pay on Merchants</li>
+            </ul>
+          </div>
+          <div class="know-us">
+            <h3>Let Us Help You</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Carees</li>
+              <li>Press REleases</li>
+              <li>Amazon Science</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-section-3">
+          <div class="top">
+            <img
+              src="https://amazon-blogs-brightspot-lower.s3.amazonaws.com/about/00/92/0260aab44ee8a2faeafde18ee1da/amazon-logo-inverse.svg"
+              alt=""
+              width="100px"
+            />
+            <h3>English</h3>
+          </div>
+         <div class="bottom-parent">
+            <div class="bottom">
+                <p>India</p>
+                <p>Australia</p>
+                <p>Brazil</p>
+                <p>China</p>
+                <p>France</p>
+                <p>United Kingdom</p>
+                <p>Australia</p>
+                <p>Brazil</p>
+                <p>China</p> 
+           
+              </div>
+              <div class="bottom">
+                <p>France</p>
+                <p>United Kingdom</p>
+                <p>Australia</p>
+                <p>Brazil</p>
+                <p>China</p>
+                <p>France</p>
+                <p>United Kingdom</p>
+              </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+
+    overflow: scroll;
+}
+.main{
+    width: 100%;
+    
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 10vh;
+    box-sizing: border-box;
+    border: 1px solid white;
+    box-shadow: -6px -8px 20px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    padding: 0 12px 0 12px;
+}
+.header .logo{
+    margin:0 0 0 12px;
+}
+
+.header .address{
+    display: flex;
+    
+}
+.address .address-text{
+    font-size: 1vw;
+    
+}
+.address #loc-icon{
+    margin-top: 15px;
+    font-size: 1.5vw;
+
+}
+.header .center-botton{
+    
+    display: flex;
+    padding: 2vh;
+    box-sizing: border-box;
+    
+    
+    
+}
+.center-botton select,input,button {
+    padding: 7px;
+}
+.center-botton #All,#Search-icon{
+    width: 5vw;
+    border-color: transparent;
+    
+}
+.center-botton #All{
+    border-radius: 10px 0 0 10px;
+    background-color: gainsboro;
+}
+.center-botton #Search-icon{
+    border-radius: 0 10px 10px 0;
+    background-color: #F3A847;   
+    margin-left: -1px;
+    font-size: 1.5vw;
+}
+.center-botton #Search-box{
+    margin-left: -1px;
+   
+    border: 0.1px solid  #F3A847;
+   
+    width: 30vw;
+    
+}
+
+.header .language{
+    display: flex;
+    margin-left: -15px;
+    gap: 2px;
+    font-size: 12px;
+    
+}
+.header #EN,#indian-flag{
+ margin-top:12px ;
+   
+}
+
+.header .account-list{
+    font-size: 12px;
+}
+.header .return-orders{
+    font-size: 12px;
+}
+
+.header .cart{
+    display: flex;
+    font-size: 12px;
+    align-items: baseline;
+
+}
+.header .cart #cart-icon{
+    font-size: 35px;
+}
+
+.header .logo,.address,.account-list,.language,.return-orders,.cart{
+    padding: 5px;
+}
+.header .logo:hover,.address:hover,.account-list:hover, .language:hover,.return-orders:hover, .cart:hover {
+ border: 1px solid #0e3c53;
+
+} 
+
+/* Page1 ki  styling suru */
+/* navbar css properties*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232F3E;
+   font-size: 5px;
+
+}
+.nav .left-element{
+    display: flex;
+    color: white;
+    gap: 12px;
+    align-items: center;
+    justify-content: left;
+}
+.nav .All{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    
+
+}
+.nav i {
+    font-size: 22px;
+}
+
+/* chalo ab banners ko theek kar lete hain */
+.banners{
+    padding: 12px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.voucher-banners{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.voucher-banners img{
+    width: 15vw;
+}
+
+
+/* Page 2 ki css  */
+
+.page2  {
+    padding: 0 30px 0 30px;
+}
+
+
+/* footer ko saja dhaja lete hain 
+ */
+
+ .footer .goto-top-bookmark {
+    background-color: #485769;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+ }
+
+
+ .footer-section-2{
+    background-color: #232F3E;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+ }
+ .footer-section-2 ul{
+    display: flex;
+    flex-direction: column;
+    
+ }
+ .footer-section-2 li{
+    list-style-type: none;
+    margin-top: 12px;
+    
+ }
+ .footer-section-3{
+
+     background-color: #232F3E;
+     color: white;
+     padding: 30px;
+     border-top: 1px solid rgba(128, 128, 128, 0.371);
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+ }
+
+ .footer-section-3 .top{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+ }
+ .footer-section-3 .top h3{
+    border: 1px solid white;
+    padding: 12px;
+ }
+
+.footer-section-3 .bottom{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 12px;
+}
+/* media querieas  */
+.bottom-parent{
+    line-height: 25px;
+}
+
+@media (max-width:600px) {
+
+   
+     .header , .nav,.content,.footer{ 
+        width: 140%;
+        overflow: hidden;
+    }
+    .header .address, .header .language, .header .account-list{
+        display: none;
+    }
+.nav img{
+    display: none;
+}
+.nav{
+    font-size: 10px;
+}
+.footer{
+    font-size: 10px;
+}
+
+.center-botton select {
+display: none;
+}
+.center-botton #Search-box{
+    border-radius: 12px 0 0 12px;
+}
+.center-botton #Search-icon{
+   padding: 12px;
+   font-size: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+}
